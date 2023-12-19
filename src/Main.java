@@ -14,10 +14,10 @@ public class Main {
 
         // metodo di inizializzazione 2) -> Map.of():
         Map<String, Integer> studentsEmpty = Map.of();
-        Map<String, Integer> students2 = new HashMap<String, Integer>(Map.of("Sara", 20, "Carla", 31, "Andrea", 27));
+        Map<String, Integer> students2 = new HashMap<>(Map.of("Sara", 20, "Carla", 31, "Andrea", 27));
 
         //metodo di inizializzazione 3) -> Map.ofEntries():
-        Map<String, Integer> students3 = new HashMap<String, Integer>(Map.ofEntries(new AbstractMap.SimpleEntry<String, Integer>("Max", 31), new AbstractMap.SimpleEntry<String, Integer>("Alex", 28)));
+        Map<String, Integer> students3 = new HashMap<>(Map.ofEntries(new AbstractMap.SimpleEntry<>("Max", 31), new AbstractMap.SimpleEntry<>("Alex", 28)));
 
 
         System.out.println("List of student n.1: " + students1);
